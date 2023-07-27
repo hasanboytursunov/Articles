@@ -1,0 +1,200 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* bebas-neue-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bebas-neue-v10-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  height: 100%;
+  font-size: 1.6rem;
+  font-family: "bebas Neue", sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ol,
+ul {
+  list-style: none;
+}
+.wrapper {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  /* justify-content: center; */
+}
+.hero {
+  width: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/Rectanglehero\ 1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero__wrapper {
+  width: 100%;
+  max-width: 285px;
+}
+.hero__title {
+  color: #ffff;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  margin-bottom: 2.4rem;
+}
+.hero__btn {
+  border: 0;
+  background-color: #1e90ff;
+  padding: 1.2rem 2.4rem;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "inherit";
+  display: flex;
+  align-items: center;
+  font-family: "inherit";
+  transition: 0, 3s;
+  cursor: pointer;
+}
+.hero__btn:hover {
+  background-color: rgba(30, 144, 255, 0.8);
+}
+.hero__btn__inner-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.hero__btn__image::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero__btn__text {
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.main {
+  width: 50%;
+  padding: 5.4rem;
+}
+.main__content__title {
+  margin-bottom: 2.4rem;
+  font-weight: 400;
+  color: #222222;
+  letter-spacing: 2px;
+}
+.main__divider {
+  margin-bottom: 2.4rem;
+  border-bottom: none;
+  border-style: solid;
+  border-width: px;
+  border-color: #999999;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.main__title {
+  margin-right: auto;
+}
+.main__content {
+}
+.main__content__list {
+}
+.main__content__item {
+  display: flex;
+  margin-top: 10px;
+  gap: 4px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  letter-spacing: 2px;
+}
+.main__content__img {
+  margin-right: 1rem;
+}
+.main__content__info {
+}
+.main__content__title {
+}
+.main__content__title:hover {
+  color: #1e90ff;
+  cursor: pointer;
+}
+.main__content__counter {
+}
+.main__content__time {
+}
+.main__content__view {
+  color: #666666;
+  font-family: "roboto" sans-serif;
+  font-size: 1.4rem;
+  line-height: 16.41px;
+  display: flex;
+  gap: 1rem;
+}
+.main__content__btn {
+  display: block;
+  background-color: #1e90ff;
+  width: 49.2rem;
+  height: 4rem;
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: #ffffff;
+}
+.main__content__btn:hover {
+  background-color: rgb(30, 144, 255, 0.8);
+}
